@@ -1,0 +1,15 @@
+
+.me-auto {
+    padding-left: 950px;
+   
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 2rem;
+    margin-block: 2rem;
+    padding: 0 3rem;
+    margin-top: 6rem;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2)
+}
