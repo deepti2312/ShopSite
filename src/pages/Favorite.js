@@ -1,6 +1,7 @@
 import Header from "./Header";
 import { useSelector } from 'react-redux';
 import { Favourites } from '../Card';
+import Footer from './Footer';
 
 const Favorite = () => {
 
@@ -13,6 +14,7 @@ const Favorite = () => {
                     return <Favourites key={item.id} product={item} />
                 })}
             </div>
+            <Footer />
         </>
     )
 }

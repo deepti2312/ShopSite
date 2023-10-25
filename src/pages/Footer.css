@@ -1,0 +1,12 @@
+.footer {
+    bottom: 0;
+    background-color: rgb(70, 87, 243);
+    height: 4rem;
+    text-align: center;
+}
+
+.footer .footerBtn {
+    color: white;
+    font-size: xx-large;
+}
+                                                                                                                                                               

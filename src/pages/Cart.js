@@ -1,7 +1,7 @@
 import Header from "./Header";
 import { useSelector } from 'react-redux'
 import { Carts } from '../Card'
-
+import Footer from './Footer';
 
 const Cart = () => {
     const data = useSelector((state) => state.shop.cart);
@@ -18,6 +18,7 @@ const Cart = () => {
             <div>
                 <h3>Total Price: {total}rs.</h3>
             </div>
+            <Footer />
         </>
     )
 }

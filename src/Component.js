@@ -3,6 +3,7 @@ import React from "react";
 import { Products } from './Card';
 import Header from './pages/Header';
 import { useSelector } from 'react-redux';
+import Footer from './pages/Footer';
 
 function Dashboard() {
 
@@ -15,6 +16,7 @@ function Dashboard() {
                     return <Products key={product.id} product={product} />
                 })}
             </div>
+            <Footer />
         </>
 
     )
