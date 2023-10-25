@@ -1,12 +1,23 @@
-import React from "react";
 import Header from "./Header";
+import { useSelector } from 'react-redux'
+import { Carts } from '../Card'
 
 
 const Cart = () => {
+    const data = useSelector((state) => state.shop.cart);
+    let total = 0
+    data.map((item) => total += item.price)
     return (
         <>
             <Header />
-            <h5>No carts.</h5>
+            <div className='grid-container'>
+                {data.map((item) => {
+                    return <Carts key={item.id} product={item} />
+                })}
+            </div>
+            <div>
+                <h3>Total Price: {total}rs.</h3>
+            </div>
         </>
     )
 }
