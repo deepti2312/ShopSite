@@ -6,77 +6,111 @@ const shopSlice = createSlice({
         product_data: [
             {
                 id: 1,
-                name: 'Product A',
+                name: 'Morning road',
                 price: 19.99,
-                description: 'Description of the Product',
+                description: 'Which method you choose is entirely up to you, and the specifics of your design.',
                 image: 'https://images.pexels.com/photos/16901862/pexels-photo-16901862/free-photo-of-people-walking-on-street-in-city-downtown.jpeg?auto=compress&cs=tinysrgb&w=230',
             },
             {
                 id: 2,
-                name: 'Product B',
+                name: 'Lights',
                 price: 29.99,
-                description: 'Description of the Product',
+                description: 'Which method you choose is entirely up to you, and the specifics of your design.',
                 image: 'https://images.pexels.com/photos/6116145/pexels-photo-6116145.jpeg?auto=compress&cs=tinysrgb&w=230',
             },
             {
                 id: 3,
-                name: 'Product C',
+                name: 'Camera',
                 price: 15.49,
-                description: 'Description of the Product',
+                description: 'Which method you choose is entirely up to you, and the specifics of your design.',
                 image: 'https://images.pexels.com/photos/18760204/pexels-photo-18760204/free-photo-of-photo-of-a-vintage-camera.jpeg?auto=compress&cs=tinysrgb&w=230',
             },
             {
                 id: 4,
-                name: 'Product D',
+                name: 'Dark Night',
                 price: 34.99,
-                description: 'Description of the Product',
+                description: 'Which method you choose is entirely up to you, and the specifics of your design.',
                 image: 'https://images.pexels.com/photos/16013193/pexels-photo-16013193/free-photo-of-al-aqsa-mosque-in-jerusalem-at-night.jpeg?auto=compress&cs=tinysrgb&w=230',
             },
             {
                 id: 5,
-                name: 'Product E',
+                name: 'Your Shaddow',
                 price: 49.99,
-                description: 'Description of the Product',
+                description: 'Which method you choose is entirely up to you, and the specifics of your design.',
                 image: 'https://images.pexels.com/photos/3876401/pexels-photo-3876401.jpeg?auto=compress&cs=tinysrgb&w=230',
             },
             {
                 id: 6,
-                name: 'Product F',
+                name: 'A Moon',
                 price: 22.99,
-                description: 'Description of the Product',
+                description: 'Which method you choose is entirely up to you, and the specifics of your design.',
                 image: 'https://images.pexels.com/photos/5707718/pexels-photo-5707718.jpeg?auto=compress&cs=tinysrgb&w=230',
             },
             {
                 id: 7,
-                name: 'Product G',
+                name: 'A Girl',
                 price: 18.75,
-                description: 'Description of the Product',
+                description: 'Which method you choose is entirely up to you, and the specifics of your design.',
                 image: 'https://images.pexels.com/photos/12204296/pexels-photo-12204296.jpeg?auto=compress&cs=tinysrgb&w=230',
             },
             {
                 id: 8,
-                name: 'Product H',
+                name: 'You Alive',
                 price: 27.99,
-                description: 'Description of the Product',
+                description: 'Which method you choose is entirely up to you, and the specifics of your design.',
                 image: 'https://images.pexels.com/photos/3871773/pexels-photo-3871773.jpeg?auto=compress&cs=tinysrgb&w=230',
             },
             {
                 id: 9,
-                name: 'Product I',
+                name: 'Tea Time',
                 price: 39.99,
-                description: 'Description of the Product',
+                description: 'DWhich method you choose is entirely up to you, and the specifics of your design.',
                 image: 'https://images.pexels.com/photos/5591671/pexels-photo-5591671.jpeg?auto=compress&cs=tinysrgb&w=230',
             },
             {
                 id: 10,
-                name: 'Product J',
+                name: 'A Book',
                 price: 45.00,
-                description: 'Description of the Product',
+                description: 'Which method you choose is entirely up to you, and the specifics of your design.',
                 image: 'https://images.pexels.com/photos/4170628/pexels-photo-4170628.jpeg?auto=compress&cs=tinysrgb&w=230',
             },
         ],
         cart: [],
-        favorites: []
+        favorites: [],
+        users : [
+            {
+              username: "@deepti",
+              password: "1111",
+              name: "deepti Vishwakarma",
+              post: 23,
+              likes: 222,
+              comments: 123
+            },
+            {
+              username: "@avani",
+              password: "1111",
+              name: "avani jain",
+              post: 24,
+              likes: 252,
+              comments: 133
+            },
+            {
+              username: "@apurva",
+              password: "1111",
+              name: "apurva agrawal",
+              post: 28,
+              likes: 228,
+              comments: 183
+            },
+            {
+              username: "@shruti",
+              password: "1111",
+              name: "shruti chouhan",
+              post: 28,
+              likes: 228,
+              comments: 183
+            }
+          ]
     },
     reducers: {
         addToCart: (state, action) => {

@@ -1,6 +1,7 @@
+import './Cart.css';
 import Header from "./Header";
 import { useSelector } from 'react-redux'
-import { Carts } from '../Card'
+import { TotalCart } from '../Card'
 import Footer from './Footer';
 
 const Cart = () => {
@@ -10,14 +11,16 @@ const Cart = () => {
     return (
         <>
             <Header />
-            <div className='grid-container'>
-                {data.map((item) => {
-                    return <Carts key={item.id} product={item} />
-                })}
-            </div>
             <div>
-                <h3>Total Price: {total}rs.</h3>
-            </div>
+                <div className="cart">
+                    {data.map((item) => {
+                        return <TotalCart key={item.id} product={item} />
+                    })}
+                </div><br/>
+                <div className="total">
+                    <h4>Total Price: {total}rs.</h4>
+                </div>
+            </div><br/>
             <Footer />
         </>
     )

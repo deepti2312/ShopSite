@@ -1,0 +1,13 @@
+.login {
+    height: 8rem;
+}
+
+.login .loginDetails {
+    text-align: center;
+    margin-top: 5rem;
+    
+}
+
+.loginBtn {
+    text-align: center;
+}

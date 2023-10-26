@@ -4,6 +4,7 @@ import Cart from './pages/Cart'
 import Favorite from './pages/Favorite'
 import Nopage from './pages/Nopage'
 import ProductDetail from './pages/ProductDetail';
+import Login from './pages/Login';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path='/carts' element={<Cart />} />
         <Route path='/favourites' element={<Favorite />} />
         <Route path='/product-details/:id' element={<ProductDetail />} />
+        <Route path='/login' element={<Login />} />
         <Route path='*' element={<Nopage />} />
       </Routes>
     </BrowserRouter>

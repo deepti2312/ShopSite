@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom';
 import { Products } from '../Card';
 import { useSelector } from 'react-redux';
 import Header from './Header';
+import Footer from './Footer';
 
 
 function ProductDetail() {
@@ -27,6 +28,7 @@ function ProductDetail() {
                     })}
                 </div>
             </div>
+            <Footer />
 
         </>
     )
