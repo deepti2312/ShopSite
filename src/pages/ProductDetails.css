@@ -1,0 +1,23 @@
+.profilePage {
+    display: flex;
+    width: 25rem;
+}
+
+.profilePage .carts {
+    display: flex;
+    flex-direction: column;
+    margin-top: 6rem;
+    width: 25rem;
+}
+
+.profilePage .details {
+    margin-right: -80rem;
+    width: 85rem;
+    margin-top: 10rem;
+    padding-left: 40rem;
+}
+
+.profilePage .details .position {
+    position: fixed;
+    width: 30rem;
+}

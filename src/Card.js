@@ -3,9 +3,11 @@ import React from "react";
 import { Button } from 'react-bootstrap';
 import { addToCart, markFavourite, unmarkFavourite, removeFromCart } from './Reducers';
 import { useDispatch } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 function Products({ product }) {
-    const { name, description, price, image } = product
+    const { id, name, description, price, image } = product
+
     const dispatch = useDispatch();
 
     const addCarts = () => {
@@ -18,7 +20,7 @@ function Products({ product }) {
     return (
         <>
             <div className='productCard'>
-                <img src={image} alt={name} />
+                <Link to={'/product-details/' + id}><img src={image} alt={name} /></Link>
                 <h4>{name}</h4>
                 <p>{description}</p>
                 <p>Price : {price}</p>

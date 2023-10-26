@@ -1,8 +1,9 @@
-import  Dashboard from './Component';
+import Dashboard from './Component';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Cart from './pages/Cart'
 import Favorite from './pages/Favorite'
 import Nopage from './pages/Nopage'
+import ProductDetail from './pages/ProductDetail';
 
 function App() {
   return (
@@ -11,9 +12,10 @@ function App() {
         <Route path='/' element={<Dashboard />} />
         <Route path='/carts' element={<Cart />} />
         <Route path='/favourites' element={<Favorite />} />
+        <Route path='/product-details/:id' element={<ProductDetail />} />
         <Route path='*' element={<Nopage />} />
       </Routes>
-  </BrowserRouter>
+    </BrowserRouter>
   );
 }
 

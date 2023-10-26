@@ -1,12 +1,11 @@
 .navBar {
     top: 0;
     position: fixed;
-    /* z-index: index 100%; */
     background-color: rgb(70, 87, 243);
     height: 4rem;
     width: 100%;
     font-size: xx-large;
-    /* color: white; */
+
 }
 
 .navBar .Btn .homeBtn {
