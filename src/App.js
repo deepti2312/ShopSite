@@ -5,6 +5,7 @@ import Favorite from './pages/Favorite'
 import Nopage from './pages/Nopage'
 import ProductDetail from './pages/ProductDetail';
 import Login from './pages/Login';
+// import Protected from './pages/Protected';
 
 function App() {
   return (
@@ -13,9 +14,11 @@ function App() {
         <Route path='/' element={<Dashboard />} />
         <Route path='/carts' element={<Cart />} />
         <Route path='/favourites' element={<Favorite />} />
+        {/* <Route path='/favourites' element={<Protected Component={Favorite} />} /> */}
         <Route path='/product-details/:id' element={<ProductDetail />} />
         <Route path='/login' element={<Login />} />
         <Route path='*' element={<Nopage />} />
+
       </Routes>
     </BrowserRouter>
   );

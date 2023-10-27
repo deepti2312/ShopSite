@@ -13,7 +13,7 @@ const shopSlice = createSlice({
             },
             {
                 id: 2,
-                name: 'Lights',
+                name: 'Lights  ',
                 price: 29.99,
                 description: 'Which method you choose is entirely up to you, and the specifics of your design.',
                 image: 'https://images.pexels.com/photos/6116145/pexels-photo-6116145.jpeg?auto=compress&cs=tinysrgb&w=230',
