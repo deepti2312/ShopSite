@@ -21,7 +21,7 @@ function App() {
         <Route path='/favourites' element={<Protected Component={login ? Favorite : Login} />} />
         <Route path='/product-details/:id' element={<Protected Component={login ? ProductDetail : Login} />} />
         <Route path='/profile' element={<Protected Component={login ? Profile : Login} />} />
-        <Route path='/login' element={<Protected Component={login ? Dashboard : Login} />} />
+        <Route path='/login' element={<Login/>}/>
         <Route path='*' element={<Nopage />} />
 
       </Routes>

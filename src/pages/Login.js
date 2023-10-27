@@ -1,6 +1,6 @@
 import './Login.css';
 import { useNavigate } from "react-router-dom";
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Header from './Header';
 import Footer from './Footer';
 import { useSelector } from 'react-redux';
@@ -27,6 +27,12 @@ const Login = () => {
         }
 
     }
+    useEffect(()=>{
+        if(localStorage.getItem("login") === "true"){
+            navigate("/")
+        }
+    },[])
+    
     return (
         <>
             <Header />
