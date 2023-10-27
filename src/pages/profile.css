@@ -1,0 +1,13 @@
+.logout {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.logout .btn1 {
+    border-radius: 1.5rem;
+    font-size: 0.8rem;
+    margin-left: 0.2rem;
+    padding: 0.3rem;
+    color: white;
+    background-color: rgb(58, 56, 56);
+}

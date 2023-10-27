@@ -1,0 +1,8 @@
+.fav-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+    margin-block: 4rem;
+    padding: 2rem;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2)
+}

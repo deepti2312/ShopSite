@@ -15,25 +15,61 @@
 }
 
 
-.navBar .Btn .crtbtn {
+.navBar .Btn .dropdown .icon {
+    color: white;
+    background-color: rgb(58, 56, 56);
+    padding: 1rem;
+    display: flex;
+    float: right;
+    border-color: black;
+    margin-right: 3rem;
+    margin-top: -6rem;
+    border-radius: 50%;
+
+}
+
+.navBar .Btn .dropdown .menu {
+    background-color: rgb(165, 165, 165);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.navBar .Btn .dropdown .menu .font-color {
+    color: black;
+}
+
+.navBar .Btn .Btn11 {
+    display: flex;
+    margin-top: -8.5rem;
+}
+.navBar .Btn .Btn11 .crtbtn {
+    color: white;
+    margin-left: 50rem;
+    margin-top: 3rem;
+    padding: 3rem;
+    
+}
+
+.navBar .Btn .Btn11 .favbtn {
     color: white;
     margin-top: 3rem;
-    margin-left: 45rem;
+    margin-left: -3rem;
+    padding: 3rem;
 }
 
-.navBar .Btn .favbtn {
+.navBar .Btn .profile1 {
     color: white;
-    margin-top: 3rem;
-    margin-left: 2rem;
+    margin-right: 2rem;
+    float: right;
 }
 
-.navBar .Btn .profile {
+.navBar .Btn .profile2 {
     color: white;
-    padding: 2rem;
-    margin-left: 8rem;
+    padding: 1rem;
+    display: flex;
+    float: right;
+    margin-right: 3rem;
 }
 
-.navBar .Btn .crtbtn .popup {
+.navBar .Btn .Btn11 .crtbtn .popup {
     background-color: #ff6347;
     color: white;
     border-radius: 50%;
@@ -45,7 +81,7 @@
     height: 1rem;
 }
 
-.navBar .Btn .favbtn .popup {
+.navBar .Btn .Btn11 .favbtn .popup {
     background-color: #ff6347;
     color: white;
     border-radius: 50%;

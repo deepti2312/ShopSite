@@ -1,3 +1,4 @@
+import './Favourite.css';
 import Header from "./Header";
 import { useSelector } from 'react-redux';
 import { Favourites } from '../Card';
@@ -9,7 +10,7 @@ const Favorite = () => {
     return (
         <>
             <Header />
-            <div className='grid-container'>
+            <div className='fav-grid-container'>
                 {data.map((item) => {
                     return <Favourites key={item.id} product={item} />
                 })}

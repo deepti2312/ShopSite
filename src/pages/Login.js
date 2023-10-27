@@ -18,6 +18,9 @@ const Login = () => {
 
         const user = users.find((user) => user.username === username && user.password === password)
         if (user) {
+
+            let login = true
+            localStorage.setItem('login', JSON.stringify(login))
             navigate('/')
         } else {
             alert('invalid Username or passsword...!')
@@ -65,25 +68,6 @@ const Login = () => {
             <Footer />
         </>
     )
-
-    // return (
-    //     <>
-    //         <Header />
-    //         <div className='login'>
-    //             <div className="loginDetails">
-    //                 <form >
-    //                     <label><b>Username </b><input type="text" name={username} onChange={(e) => setUsername(e.target.value)} /></label><br></br>
-    //                     <label><b>Password </b><input type="text" name={password} onChange={(e) => setPassword(e.target.value)} /></label>
-    //                 </form><br></br>
-    //                 <div className='loginBtn'>
-    //                     <Button onClick={handleLogin}>Login</Button>
-    //                 </div>
-    //             </div><br /><br/> <br /><br /><br/> <br /><br /><br/> <br /><br /><br/><br /><br/> <br /><br /><br/> <br />
-    //             <Footer />
-    //         </div>
-
-    //     </>
-    // )
 }
 
 export default Login;

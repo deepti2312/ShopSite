@@ -16,7 +16,6 @@ function Dashboard() {
                 <div className='searchBar'>
                     <Search />
                 </div>
-
                 <div className='grid-container'>
                     {data.map((product) => {
                         return <Products key={product.id} product={product} />
