@@ -36,35 +36,35 @@ const Login = () => {
     return (
         <>
             <Header />
-            <div class="container-fluid px-1 px-md-5 px-lg-1 px-xl-5 py-5 mx-auto">
-                <div class="card card0 border-0">
-                    <div class="row d-flex">
-                        <div class="col-lg-6">
-                            <div class="card1 pb-5">
-                                <div class="row">
-                                    <img src="https://i.imgur.com/CXQmsmF.png" alt='logo' class="logo" />
+            <div className="container-fluid px-1 px-md-5 px-lg-1 px-xl-5 py-5 mx-auto">
+                <div className="card card0 border-0">
+                    <div className="row d-flex">
+                        <div className="col-lg-6">
+                            <div className="card1 pb-5">
+                                <div className="row">
+                                    <img src="https://i.imgur.com/CXQmsmF.png" alt='logo' className="logo" />
                                 </div>
-                                <div class="row px-3 justify-content-center mt-4 mb-5 border-line">
-                                    <img src="https://i.imgur.com/uNGdWHi.png" alt='logo' class="image" />
+                                <div className="row px-3 justify-content-center mt-4 mb-5 border-line">
+                                    <img src="https://i.imgur.com/uNGdWHi.png" alt='logo' className="image" />
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6">
-                            <div class="card2 card border-0 px-4 py-5">
-                                <div class="row px-3">
-                                    <label class="mb-1"><h6 class="mb-0 text-sm"><b>Username</b></h6></label>
-                                    <input class="mb-4" type="text" placeholder="@demo123" name={username} onChange={(e) => setUsername(e.target.value)} />
+                        <div className="col-lg-6">
+                            <div className="card2 card border-0 px-4 py-5">
+                                <div className="row px-3">
+                                    <div className="mb-1"><h6 className="mb-0 text-sm"><b>Username</b></h6></div>
+                                    <input className="mb-4" type="text" id="username" placeholder="@username123" name={username} autoComplete='off' onChange={(e) => setUsername(e.target.value)} />
                                 </div>
-                                <div class="row px-3">
-                                    <label class="mb-1"><h6 class="mb-0 text-sm"><b>Password</b></h6></label>
-                                    <input type="password" placeholder="Enter password" name={password} onChange={(e) => setPassword(e.target.value)} />
+                                <div className="row px-3">
+                                    <div className="mb-1"><h6 className="mb-0 text-sm"><b>Password</b></h6></div>
+                                    <input type="password" id="password" placeholder="Enter password" name={password} autoComplete='off' onChange={(e) => setPassword(e.target.value)} />
                                 </div><br />
 
-                                <div class="row mb-3 px-3">
-                                    <button type="submit" class="btn btn-blue text-center" onClick={handleLogin}><b>Login</b></button>
+                                <div className="row mb-3 px-3">
+                                    <button type="submit" className="btn btn-blue text-center" onClick={handleLogin}><b>Login</b></button>
                                 </div>
-                                <div class="row mb-4 px-3">
-                                    <small class="font-weight-bold">Don't have an account? <a class="text-danger " href="/login">Register</a></small>
+                                <div className="row mb-4 px-3">
+                                    <small className="font-weight-bold">Don't have an account? <a className="text-danger " href="/login">Register</a></small>
                                 </div>
                             </div>
                         </div>

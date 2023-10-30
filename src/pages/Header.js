@@ -22,13 +22,13 @@ const Header = () => {
             {login ? <div className='navBar'>
                 <nav >
                     <div className='Btn'>
-                        <Link to="/" className='homeBtn'><i class="fa fa-home"></i></Link>
+                        <Link to="/" className='homeBtn'><i className="fa fa-home"></i></Link>
                         <div className='Btn11'>
-                            <Link to="/carts" className='crtbtn'><i class="fa fa-shopping-cart"></i><span className='popup'>{cartsCount.length}</span></Link>
-                            <Link to="/favourites" className='favbtn'><i class="fa fa-heart-o"></i><span className='popup'>{favCount.length}</span></Link>
+                            <Link to="/carts" className='crtbtn'><i className="fa fa-shopping-cart"></i><span className='popup'>{cartsCount.length}</span></Link>
+                            <Link to="/favourites" className='favbtn'><i className="fa fa-heart-o"></i><span className='popup'>{favCount.length}</span></Link>
                         </div>
                         <Dropdown className='dropdown'>
-                            <Dropdown.Toggle className='icon'><i class="fa fa-user"></i></Dropdown.Toggle>
+                            <Dropdown.Toggle className='icon'><i className="fa fa-user"></i></Dropdown.Toggle>
                             <Dropdown.Menu className='menu'>
                                 <Dropdown.Item><Link to="/profile" className='font-color'>View profile</Link></Dropdown.Item>
                                 <Dropdown.Item><Link to="/login" className='font-color' onClick={handleLogout}>Logout</Link></Dropdown.Item>
@@ -41,8 +41,8 @@ const Header = () => {
                 <div className='navBar'>
                     <nav >
                         <div className='Btn'>
-                            <Link to="/" className='homeBtn'><i class="fa fa-home"></i></Link>
-                            <Link to="/login" className='profile2'><i class="fa fa-user"></i></Link>
+                            <Link to="/" className='homeBtn'><i className="fa fa-home"></i></Link>
+                            <Link to="/login" className='profile2'><i className="fa fa-user"></i></Link>
                         </div>
                     </nav>
                 </div>

@@ -3,7 +3,7 @@ import './Search.css'
 export default function Search() {
     return (
         <>
-            <div class="search">
+            <div className="search">
                 <form className='form'>
                     <input type="text"
                         placeholder="Tap to search"
