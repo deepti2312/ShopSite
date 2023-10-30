@@ -31,7 +31,7 @@ const Login = () => {
         if(localStorage.getItem("login") === "true"){
             navigate("/")
         }
-    },[])
+    })
     
     return (
         <>
@@ -64,7 +64,7 @@ const Login = () => {
                                     <button type="submit" class="btn btn-blue text-center" onClick={handleLogin}><b>Login</b></button>
                                 </div>
                                 <div class="row mb-4 px-3">
-                                    <small class="font-weight-bold">Don't have an account? <a class="text-danger " href="/#">Register</a></small>
+                                    <small class="font-weight-bold">Don't have an account? <a class="text-danger " href="/login">Register</a></small>
                                 </div>
                             </div>
                         </div>

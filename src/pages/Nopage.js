@@ -1,6 +1,6 @@
 const Nopage = () => {
     return (
-        <h1>404 PageNotFound.</h1>
+        <h1 style={{textAlign:"center", marginTop:"3rem"}}>404 PageNotFound.</h1>
     )
 }
 
