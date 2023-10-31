@@ -7,7 +7,7 @@ const shopSlice = createSlice({
             {
                 id: 1,
                 name: 'Morning road',
-                price: 19.99,
+                price: 1990,
                 description: 'Which method you choose is entirely up to you, and the specifics of your design.',
                 image: 'https://images.pexels.com/photos/16901862/pexels-photo-16901862/free-photo-of-people-walking-on-street-in-city-downtown.jpeg?auto=compress&cs=tinysrgb&w=210',
                 quantity: 1
@@ -15,7 +15,7 @@ const shopSlice = createSlice({
             {
                 id: 2,
                 name: 'Lights  ',
-                price: 29.99,
+                price: 2990,
                 description: 'Which method you choose is entirely up to you, and the specifics of your design.',
                 image: 'https://images.pexels.com/photos/6116145/pexels-photo-6116145.jpeg?auto=compress&cs=tinysrgb&w=210',
                 quantity: 1
@@ -23,7 +23,7 @@ const shopSlice = createSlice({
             {
                 id: 3,
                 name: 'Camera',
-                price: 15.49,
+                price: 1521,
                 description: 'Which method you choose is entirely up to you, and the specifics of your design.',
                 image: 'https://images.pexels.com/photos/18760204/pexels-photo-18760204/free-photo-of-photo-of-a-vintage-camera.jpeg?auto=compress&cs=tinysrgb&w=210',
                 quantity: 1
@@ -31,7 +31,7 @@ const shopSlice = createSlice({
             {
                 id: 4,
                 name: 'Dark Night',
-                price: 34.99,
+                price: 3420,
                 description: 'Which method you choose is entirely up to you, and the specifics of your design.',
                 image: 'https://images.pexels.com/photos/16013193/pexels-photo-16013193/free-photo-of-al-aqsa-mosque-in-jerusalem-at-night.jpeg?auto=compress&cs=tinysrgb&w=210',
                 quantity: 1
@@ -39,7 +39,7 @@ const shopSlice = createSlice({
             {
                 id: 5,
                 name: 'Your Shaddow',
-                price: 49.99,
+                price: 4995,
                 description: 'Which method you choose is entirely up to you, and the specifics of your design.',
                 image: 'https://images.pexels.com/photos/3876401/pexels-photo-3876401.jpeg?auto=compress&cs=tinysrgb&w=210',
                 quantity: 1
@@ -47,7 +47,7 @@ const shopSlice = createSlice({
             {
                 id: 6,
                 name: 'A Moon',
-                price: 22.99,
+                price: 2202,
                 description: 'Which method you choose is entirely up to you, and the specifics of your design.',
                 image: 'https://images.pexels.com/photos/5707718/pexels-photo-5707718.jpeg?auto=compress&cs=tinysrgb&w=210',
                 quantity: 1
@@ -55,7 +55,7 @@ const shopSlice = createSlice({
             {
                 id: 7,
                 name: 'A Girl',
-                price: 18.75,
+                price: 1855,
                 description: 'Which method you choose is entirely up to you, and the specifics of your design.',
                 image: 'https://images.pexels.com/photos/12204296/pexels-photo-12204296.jpeg?auto=compress&cs=tinysrgb&w=210',
                 quantity: 1
@@ -63,7 +63,7 @@ const shopSlice = createSlice({
             {
                 id: 8,
                 name: 'You Alive',
-                price: 27.99,
+                price: 2760,
                 description: 'Which method you choose is entirely up to you, and the specifics of your design.',
                 image: 'https://images.pexels.com/photos/3871773/pexels-photo-3871773.jpeg?auto=compress&cs=tinysrgb&w=210',
                 quantity: 1
@@ -71,7 +71,7 @@ const shopSlice = createSlice({
             {
                 id: 9,
                 name: 'Tea Time',
-                price: 39.99,
+                price: 3960,
                 description: 'DWhich method you choose is entirely up to you, and the specifics of your design.',
                 image: 'https://images.pexels.com/photos/5591671/pexels-photo-5591671.jpeg?auto=compress&cs=tinysrgb&w=210',
                 quantity: 1
@@ -79,7 +79,7 @@ const shopSlice = createSlice({
             {
                 id: 10,
                 name: 'A Book',
-                price: 45.00,
+                price: 4500,
                 description: 'Which method you choose is entirely up to you, and the specifics of your design.',
                 image: 'https://images.pexels.com/photos/4170628/pexels-photo-4170628.jpeg?auto=compress&cs=tinysrgb&w=210',
                 quantity: 1

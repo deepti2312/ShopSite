@@ -21,7 +21,7 @@ function Products({ product }) {
                 <Link to={'/product-details/' + id}><img src={image} alt={name} /></Link>
                 <h4>{name}</h4>
                 <p>{description}</p>
-                <p>Price : {price}</p>
+                <p>Price : {price} rs.</p>
                 <div className='btn'>
                     <button className='btn1' onClick={addCarts}>Add to cart</button>
                     <button className='btn2' onClick={addFavourite}>Mark favourite</button>
@@ -51,7 +51,7 @@ function Favourites({ product }) {
                 <img src={image} alt={name} />
                 <h4>{name}</h4>
                 <p>{description}</p>
-                <p>Price : {price}</p>
+                <p>Price : {price} rs.</p>
                 <div className='btn'>
                     <button className='btn1' onClick={addCarts}>Add to cart</button>
                     <button className='btn2' onClick={removeFavourite}>Remove favourite</button>
@@ -85,7 +85,7 @@ function TotalCart({ product }) {
                 <img src={image} alt={name} />
                 <h4 className='name'>{name}</h4>
                 <p className='description'>{description}</p>
-                <h6 className='price'>Price : {price}</h6>
+                <h6 className='price'>Price : {price} rs.</h6>
                 <h6 className='quantity'>Quantity: <button onClick={incrementQuantity}>+</button> {quantity} <button onClick={decrementQuantity}>-</button></h6>
                 <button className='btn11' onClick={removeCarts}>Remove Cart</button>
                 <button className='btn22' onClick={moveToFavourite}>Move to Favourites</button>
