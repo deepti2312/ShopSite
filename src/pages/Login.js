@@ -1,8 +1,6 @@
 import './Login.css';
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from 'react';
-import Header from './Header';
-import Footer from './Footer';
 import { useSelector } from 'react-redux';
 
 const Login = () => {
@@ -21,21 +19,21 @@ const Login = () => {
 
             let login = true
             localStorage.setItem('login', JSON.stringify(login))
+            localStorage.setItem('userDetails', JSON.stringify(user))
             navigate('/')
         } else {
             alert('invalid Username or passsword...!')
         }
 
     }
-    useEffect(()=>{
-        if(localStorage.getItem("login") === "true"){
+    useEffect(() => {
+        if (localStorage.getItem("login") === "true") {
             navigate("/")
         }
     })
-    
+
     return (
         <>
-            <Header />
             <div className="container-fluid px-1 px-md-5 px-lg-1 px-xl-5 py-5 mx-auto">
                 <div className="card card0 border-0">
                     <div className="row d-flex">
@@ -71,7 +69,6 @@ const Login = () => {
                     </div>
                 </div>
             </div>
-            <Footer />
         </>
     )
 }

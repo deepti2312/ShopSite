@@ -1,9 +1,7 @@
 import './Component.css';
 import React from "react";
 import { Products } from './Card';
-import Header from './pages/Header';
 import { useSelector } from 'react-redux';
-import Footer from './pages/Footer';
 import Search from './pages/Search';
 
 function Dashboard() {
@@ -12,7 +10,6 @@ function Dashboard() {
     return (
         <>
             <div className='page'>
-                <Header />
                 <div className='searchBar'>
                     <Search />
                 </div>
@@ -21,7 +18,6 @@ function Dashboard() {
                         return <Products key={product.id} product={product} />
                     })}
                 </div>
-                <Footer />
             </div>
         </>
 

@@ -7,6 +7,8 @@ import ProductDetail from './pages/ProductDetail';
 import Login from './pages/Login';
 import Profile from './pages/Profile';
 import Protected from './pages/Protected';
+import Header from './pages/Header';
+import Footer from './pages/Footer';
 
 
 function App() {
@@ -15,16 +17,18 @@ function App() {
 
   return (
     <BrowserRouter>
+      <Header />
       <Routes>
         <Route path='/' element={<Dashboard />} />
         <Route path='/carts' element={<Protected Component={login ? Cart : Login} />} />
         <Route path='/favourites' element={<Protected Component={login ? Favorite : Login} />} />
         <Route path='/product-details/:id' element={<Protected Component={login ? ProductDetail : Login} />} />
         <Route path='/profile' element={<Protected Component={login ? Profile : Login} />} />
-        <Route path='/login' element={<Login/>}/>
+        <Route path='/login' element={<Login />} />
         <Route path='*' element={<Nopage />} />
 
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }

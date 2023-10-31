@@ -1,17 +1,16 @@
 import './profile.css';
-import '../Card.css';
-import Header from './Header';
-import Footer from './Footer';
 
 function Profile() {
- 
+  let user = JSON.parse(localStorage.getItem('userDetails'))
+
   return (
     <>
-      <Header />
-      <div className='logout'>
-        <h4>Profile page</h4>
+      <div className='profile'>
+        <p><b>Username: </b> {user.username}</p>
+        <p><b>Name: </b> {user.name}</p>
+        <p><b>Email: </b> {user.email}</p>
+        <p><b>Address: </b>{user.address}</p>
       </div>
-      <Footer />
     </>
   )
 }

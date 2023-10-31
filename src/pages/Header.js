@@ -8,14 +8,14 @@ const Header = () => {
     const cartsCount = useSelector((state) => state.shop.cart)
     const favCount = useSelector((state) => state.shop.favorites)
     const navigate = useNavigate();
-    
+
     const handleLogout = () => {
         let login = false
         localStorage.setItem('login', JSON.stringify(login))
         navigate('/login')
-    }           
+    }
     const login = JSON.parse(localStorage.getItem('login'))
-    
+
     return (
         <>
 
