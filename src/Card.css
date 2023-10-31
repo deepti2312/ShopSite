@@ -30,6 +30,7 @@
     margin-top: 5rem;
     display: flex;
     flex-direction: row;
+    margin-left: 1rem;
 }
 
 .showcart .name {
@@ -47,12 +48,15 @@
     width: 18rem;
     margin-left: 3rem;
     margin-top: 12rem;
+    font-size: small;
 }
 
 .showcart .quantity {
     width: 18rem;
     margin-left: 4rem;
     margin-top: 12rem;
+    font-size: small;
+
 }
 
 .showcart .btn11 {
